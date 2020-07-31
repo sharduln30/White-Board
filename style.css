@@ -1,0 +1,72 @@
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+}
+* {
+    box-sizing: border-box;
+}
+.tool-bar{
+    height: 67px;
+    background-color: springgreen;
+}
+
+.tools{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+.tool{
+    height: 80%;
+    /* aspect ratio  */
+    position: relative;
+}
+
+.tool-img{
+    height: 100%;
+    width: 45px;
+}
+
+.tool-options{
+    height: 5rem;
+    background-color: whitesmoke;
+    position: absolute;
+    left: -46px;
+    width: 119px;
+    top: 71px;
+}
+.size-container{
+    height: 50%;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input[type="range"]{
+    width:80%;
+}
+.color-pallet{
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.red{
+    height: 70%;
+    background-color: red;
+    width: 24%;
+    border-radius: 50%;
+}
+.blue{
+    height: 70%;
+    background-color: blue;
+    width: 24%;
+    /* to make div circular */
+    border-radius: 50%;
+}
+.green{
+    height: 70%;
+    background-color: green;
+    width: 24%;
+    border-radius: 50%;
+}

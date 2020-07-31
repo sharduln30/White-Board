@@ -1,13 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" 
-    content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <p>Hello World!</p>
+    <!-- drawing board -->
+    <div class="tool-bar">
+        <div class="tools">
+            <div class="tool">
+                <img src="./icons/Black_Pencil.svg" alt="" id="pencil" class="tool-img">
+                <div class="tool-options " id="p-options">
+                    <div class="size-container">
+                        <input type="range">
+                    </div>
+                    <div class="color-pallet">
+                        <div class="red"></div>
+                        <div class="blue "></div>
+                        <div class="green "></div>
+                    </div>
+                </div>
+            </div>
+            <div class="tool">
+                <img src="./icons/Eraser.svg" alt="" id="eraser" class="tool-img">
+                <div class="tool-options" style="display: none;">
+                    <div class="size-container" id="e-options">
+                        <input type="range">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <canvas class="board"></canvas>
+    <script>
+        let board = document.querySelector(".board");
+
+        board.height = window.innerHeight;
+        board.width = window.innerWidth;
+        // draw tool
+        const ctx = board.getContext("2d");
+        // console.log(tool);
+        ctx.lineWidth = 10;
+        // rendering
+        //    ctx.strokeRect(75, 140, 150, 110);
+        ctx.fillStyle = "brown";
+
+        // ctx.fillRect(0, 0, board.width, board.height);
+        // ctx.beginPath();
+        // ctx.moveTo(30, 30);
+        // ctx.lineTo(150, 150);
+        // ctx.lineTo(250, 150);
+        // ctx.moveTo(200, 200);
+        // ctx.lineTo(300, 300);
+        // // to render on ui => stroke
+        // ctx.stroke();
+        window.onresize = function () {
+            board.height = window.innerHeight;
+            board.width = window.innerWidth;
+            // redraw 
+            // aspect ratio manage 
+        }
+    </script>
+    <script src="tool.js"></script>
+    <script src="draw.js"></script>
 </body>
+
 </html>
