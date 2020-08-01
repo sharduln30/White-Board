@@ -27,6 +27,8 @@ for (let i = 0; i < tools.length; i++) {
                 eraserOptions.classList.remove("show");
                 ctx.strokeStyle = "black";
             }
+        } else if (toolName == "sticky") {
+            createSticky();
         }
     })
 }
@@ -44,4 +46,5 @@ for (let i = 0; i < allSliders.length; i++) {
         let newSize = elem.value;
         ctx.lineWidth = newSize;
     })
+    
 }

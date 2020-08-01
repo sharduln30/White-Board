@@ -81,7 +81,7 @@ input[type="range"]{
     left: 42vw;
     height: 12rem;
     width: 11rem;
-    background-color: #FFC312;
+    
     border-radius: 6px;
 }
 .navbar{
@@ -104,10 +104,11 @@ input[type="range"]{
     background: #2ecc71;
     width: 16%;
     border-radius: 50%;
+    margin-right: 3px;
 }
 .textbox {
     height: 80%;
-    background: inherit;
+    background-color: #FFC312;
 }
 .textbox textarea{
     height: 100%;
