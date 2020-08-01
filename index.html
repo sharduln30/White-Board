@@ -14,29 +14,44 @@
         <div class="tools">
             <div class="tool">
                 <img src="./icons/Black_Pencil.svg" alt="" id="pencil" class="tool-img">
-                <div class="tool-options " id="p-options">
+                <div class="tool-options" id="p-options">
                     <div class="size-container">
-                        <input type="range">
+                        <input type="range" min=5 max=30 class="slider" value=10>
                     </div>
                     <div class="color-pallet">
-                        <div class="red"></div>
-                        <div class="blue "></div>
-                        <div class="green "></div>
+                        <div class="red color" onclick="handleColorChange('red')"></div>
+                        <div class="blue color" onclick="handleColorChange('blue')"></div>
+                        <div class="green color" onclick="handleColorChange('green')"></div>
                     </div>
                 </div>
             </div>
             <div class="tool">
                 <img src="./icons/Eraser.svg" alt="" id="eraser" class="tool-img">
-                <div class="tool-options" style="display: none;">
-                    <div class="size-container" id="e-options">
-                        <input type="range">
+                <div class="tool-options" id="e-options">
+                    <div class="size-container">
+                        <input type="range" min=5 max=50 class="slider" value=10>
                     </div>
                 </div>
             </div>
-
+            <div class="tool">
+                <img src="./icons/StickyNote.svg" alt="" id="sticky" class="tool-img">
+            </div>
         </div>
+
+    </div>
     </div>
     <canvas class="board"></canvas>
+    
+    <div class="sticky-pad">
+        <div class="navbar">
+            <div class="close"></div>
+            <div class="minimize"></div>
+        </div>
+        <div class="textbox">
+
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+    </div>
     <script>
         let board = document.querySelector(".board");
 
@@ -59,6 +74,7 @@
         // ctx.lineTo(300, 300);
         // // to render on ui => stroke
         // ctx.stroke();
+
         window.onresize = function () {
             board.height = window.innerHeight;
             board.width = window.innerWidth;

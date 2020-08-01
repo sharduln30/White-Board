@@ -21,19 +21,18 @@ body {
     /* aspect ratio  */
     position: relative;
 }
-
 .tool-img{
     height: 100%;
     width: 45px;
 }
-
 .tool-options{
     height: 5rem;
-    background-color: whitesmoke;
+    background-color: yellow;
     position: absolute;
     left: -46px;
     width: 119px;
     top: 71px;
+    display: none;
 }
 .size-container{
     height: 50%;
@@ -69,4 +68,49 @@ input[type="range"]{
     background-color: green;
     width: 24%;
     border-radius: 50%;
+}
+
+.show{
+    display: block;
+}
+
+/* sticky pad */
+.sticky-pad{
+    position: absolute;
+    top: 40vh;
+    left: 42vw;
+    height: 12rem;
+    width: 11rem;
+    background-color: #FFC312;
+    border-radius: 6px;
+}
+.navbar{
+    height: 20%;
+    background: #f39c12;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 8px;
+}
+.close{
+    height: 65%;
+    background: red;
+    width: 16%;
+    border-radius: 50%;
+    margin-right: 3px;
+}
+.minimize{
+    height: 65%;
+    background: #2ecc71;
+    width: 16%;
+    border-radius: 50%;
+}
+.textbox {
+    height: 80%;
+    background: inherit;
+}
+.textbox textarea{
+    height: 100%;
+    width: 100%;
+    background: inherit;
 }
