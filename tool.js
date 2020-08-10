@@ -29,6 +29,10 @@ for (let i = 0; i < tools.length; i++) {
             }
         } else if (toolName == "sticky") {
             createSticky();
+        } else if (toolName == "upload") {
+            uploadImage();
+        } else if (toolName == "download") {
+            downloadImg();
         }
     })
 }
@@ -46,5 +50,5 @@ for (let i = 0; i < allSliders.length; i++) {
         let newSize = elem.value;
         ctx.lineWidth = newSize;
     })
-    
+
 }

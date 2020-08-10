@@ -36,10 +36,18 @@
             <div class="tool">
                 <img src="./icons/StickyNote.svg" alt="" id="sticky" class="tool-img">
             </div>
+            <div class="tool">
+                <img src="./icons/Photo.svg" alt="" id="upload" class="tool-img">
+                <input type="file" id="file-upload">
+            </div>
+            <div class="tool">
+                <img src="./icons/Download.svg" alt="" id="download" class="tool-img">
+                <input type="file" id="file-upload">
+            </div>
         </div>
+    </div>
+    </div>
 
-    </div>
-    </div>
     <canvas class="board"></canvas>
     <script>
         let board = document.querySelector(".board");
@@ -71,7 +79,9 @@
             // aspect ratio manage 
         }
     </script>
+    <script src="./utility/utility.js"></script>
     <script src="sticky.js"></script>
+    <script src="img.js"></script>
     <script src="tool.js"></script>
     <script src="draw.js"></script>
 </body>

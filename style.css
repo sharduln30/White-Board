@@ -108,10 +108,19 @@ input[type="range"]{
 }
 .textbox {
     height: 80%;
+    width:100%;
     background-color: #FFC312;
 }
 .textbox textarea{
     height: 100%;
     width: 100%;
     background: inherit;
+}
+/* image */
+input[type="file"]{
+    display: none;
+}
+.uploded-img{
+    height: 100%;
+    width:100%;
 }
