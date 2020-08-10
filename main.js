@@ -1,3 +1,10 @@
+// npm init -y
+// npm install electron --save-dev
+//create main.js
+// go to package.json =>
+// "main": main.js
+// scripts "start":"electron ."
+// const => create a constant variable
 const electron = require("electron");
 const app = electron.app;
 function createWindow() {
@@ -12,9 +19,10 @@ function createWindow() {
     })
     win.loadFile("index.html")
         .then(function () {
+            // console.log("App Loaded successfully");
             win.maximize();
             win.show();
-            win.webContents.openDevTools();
+            // win.webContents.openDevTools();
         })
 }
 app.whenReady().then(createWindow);
@@ -33,3 +41,5 @@ app.on('activate', () => {
         createWindow()
     }
 })
+  // In this file you can include the rest of your app's specific main process
+  // code. You can also put them in separate files and require them here.

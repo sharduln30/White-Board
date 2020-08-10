@@ -1,6 +1,5 @@
-  
 {
-  "name": "Whiteboard",
+  "name": "PP",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
@@ -10,5 +9,8 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "socket.io-client": "^2.3.0"
+  }
 }

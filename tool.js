@@ -35,6 +35,8 @@ for (let i = 0; i < tools.length; i++) {
             downloadImg();
         } else if (toolName == "undo") {
             undoFn();
+        } else if (toolName == "redo") {
+            redoFn();
         }
     })
 }
