@@ -33,6 +33,8 @@ for (let i = 0; i < tools.length; i++) {
             uploadImage();
         } else if (toolName == "download") {
             downloadImg();
+        } else if (toolName == "undo") {
+            undoFn();
         }
     })
 }

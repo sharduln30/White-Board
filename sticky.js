@@ -12,7 +12,4 @@
         let textbox = createBox();
         let textarea = document.createElement("textarea");
         textbox.appendChild(textarea);
-    
-    
     }
-    

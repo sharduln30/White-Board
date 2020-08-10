@@ -16,8 +16,6 @@ function createBox() {
     navBar.appendChild(minmize);
     navBar.appendChild(close);
     document.body.appendChild(stickyPad);
-
-
     // added all event listeners
     close.addEventListener("click", function () {
         close.parentNode.parentNode.remove();
